@@ -13,7 +13,7 @@ void bubble (int* lnum, int size) {
 			}
 }
 
-void bubbleFloat (float* lnm, float size) {
+void bubbleFloat (float* lnum, float size) {
 	float aux;
 	
 	for (int = 0; i < size; i++)

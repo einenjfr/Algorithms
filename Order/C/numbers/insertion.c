@@ -7,12 +7,11 @@ void insertion (int* lnum, int size) {
 	for (int i = 1; i < size; i++) {
 		aux = lnum[i];
 		j = i - 1;
-		while (j >= 0 && lnum[j] > aux) {
+		while (lnum[j] > aux && j >= 0) {
 			lnum[j+1] = lnum[j];
 			lnum[j] = aux;
 			j--;
 		}
-		lnum [j+1] = aux;
 	}
 }
 

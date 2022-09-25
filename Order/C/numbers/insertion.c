@@ -2,11 +2,9 @@
 
 //lnum := vector &&&& size := size of lnum
 void insertion (int* lnum, int size) {
-	int aux;
+	int aux,j;
 
-	for (int i = 0; i < size; i++) {
-		int aux, j;
-		
+	for (int i = 1; i < size; i++) {
 		aux = lnum[i];
 		j = i - 1;
 		while (j >= 0 && lnum[j] > aux) {
